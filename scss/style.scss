@@ -1,8 +1,13 @@
+@import "variables";
+@import "global";
+@import "header";
+
 body {
-    color: white;
+    color: $color-primary;
+    // transition: 4s all ease-in-out;
 }
 
-#welcome{
+#home{
     height: 100vh;
     
     &::before{
@@ -19,6 +24,7 @@ body {
         url(../img/img1.webp);
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         filter: grayscale(100%);
         
     }
@@ -26,8 +32,6 @@ body {
 
 
 
-@import "global";
-@import "header";
-@import "variables";
+
 
 
