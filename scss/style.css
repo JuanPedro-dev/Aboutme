@@ -15,28 +15,17 @@ img {
   max-width: 100%;
 }
 
-.text-logo {
-  font-family: 'Playfair Display', serif;
-}
-
-body {
+#body {
   color: white;
-}
-
-.d-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.ai-c {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background-color: #212529;
 }
 
 .text-color {
   color: rgba(243, 26, 26, 0.877);
+}
+
+.text-logo {
+  font-family: 'Playfair Display', serif;
 }
 
 #home {
@@ -58,11 +47,78 @@ body {
   left: 0;
   bottom: 0;
   height: 100vh;
-  background-image: linear-gradient(45deg, black, rgba(0, 0, 0, 0.5)), url(../img/img1.webp);
+  background-image: linear-gradient(45deg, black, rgba(0, 0, 0, 0.5)), url(../img/img2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+}
+
+#about {
+  background-color: #ccc;
+  color: black;
+  border: 1px white solid;
+  border-radius: 1rem;
+  margin: 3rem;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  #about {
+    margin: 1rem;
+  }
+}
+
+.perfil-foto {
+  padding: 1rem;
+  max-height: 10%;
+}
+
+.perfil-text {
+  padding: 2rem 0 2rem 2rem;
+}
+
+.perfil-text > p {
+  text-indent: 1rem;
+  font-size: 1.5rem;
+}
+
+.perfil-text h2 {
+  font-weight: 500;
+}
+
+.iconos > i {
+  font-size: 4rem;
+  margin: 1rem;
+}
+
+.iconos > i:first-child {
+  padding-left: 1rem;
+}
+
+.fa-html5:hover {
+  color: #e34c26;
+}
+
+.fa-css3-alt:hover {
+  color: #2965f1;
+}
+
+.fa-js:hover {
+  color: #f0db4f;
+  background-color: black;
+}
+
+.fa-sass:hover {
+  color: #cc6699;
+}
+
+.fa-bootstrap:hover {
+  color: #602C50;
+}
+
+.fa-github:hover {
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */

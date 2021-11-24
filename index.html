@@ -13,9 +13,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
-
+    <!-- fontawesome iconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
-<body>
+<body id="body">
     <!-- navbar -->
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -45,19 +46,45 @@
     </header>
 
     <!-- welcome section -->
-    <main id="home" class="d-flex ai-c">
+    <main id="home" class="d-flex align-items-center">
         <div>
-            <p>Hi, I am <span class="text-color">Juan Pedro</span> </p>
-            <p>I am a </p>
+            <p>Hi, I´m <span class="">Juan Pedro</span> </p>
+            
+            <div id="typed-strings">
+              <p>I´m <span class="text-color">front end developer</span></p>,
+              <p>I´m <span class="text-color">trainee</span></p>,
+              <p>I´m <span class="text-color">nice guy</span></p>,
+              <p>I´m <span class="text-color">handsome</span></p>,
+            </div>
+            <span class="typed"></span><!-- need to work text typed -->
         </div>
     </main>
 
     <!-- abou me -->
     <article id="about">
-        hola soy el puto amo... 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, aliquam laborum? Facere quas fuga exercitationem impedit, dolore aperiam labore adipisci et mollitia, nesciunt sunt modi provident rem natus ipsam? Debitis.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, aliquam laborum? Facere quas fuga exercitationem impedit, dolore aperiam labore adipisci et mollitia, nesciunt sunt modi provident rem natus ipsam? Debitis.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, aliquam laborum? Facere quas fuga exercitationem impedit, dolore aperiam labore adipisci et mollitia, nesciunt sunt modi provident rem natus ipsam? Debitis.</p>
+      <div class="perfil d-sm-flex align-items-center">
+
+        <div class="perfil-foto">
+          <img class="rounded-circle" src="/img/img-perfil-sm.webp" alt="foto de perfil">
+        </div>
+
+        <div class="perfil-text">
+          <h2 class="h2">About me</h2>
+          <p>Hi, I´m Juan Pedro. I have been studying front end development for a while now, this simple project can demonstrate some of my skills. Note I am not a UI/IX designer (skill not unlocked yet).</p>
+          <p></p>
+          <h3>Tecnologias:</h3>
+          <div class="iconos">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js"></i>
+            <i class="fab fa-sass"></i>
+            <i class="fab fa-bootstrap"></i>
+            <i class="fab fa-github"></i>
+          </div>
+        </div>
+
+      </div>
+      
     </article>
     
     <!-- proyects -->
@@ -71,6 +98,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="/app/app.js"></script>
-    
+
+   
 </body>
 </html>
