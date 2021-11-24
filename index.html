@@ -34,10 +34,10 @@
                     <a class="nav-link active" aria-current="page" href="#about">About</a>
                   </li>
                   <li class="nav-item  px-3">
-                    <a class="nav-link active" aria-current="page" href="#">Projects</a>
+                    <a class="nav-link active" aria-current="page" href="#project">Projects</a>
                   </li>
                   <li class="nav-item  px-3">
-                    <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                    <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -61,7 +61,7 @@
     </main>
 
     <!-- abou me -->
-    <article id="about">
+    <article id="about" class="box">
       <div class="perfil d-sm-flex align-items-center">
 
         <div class="perfil-foto">
@@ -71,7 +71,7 @@
         <div class="perfil-text">
           <h2 class="h2">About me</h2>
           <p>Hi, I´m Juan Pedro. I have been studying front end development for a while now, this simple project can demonstrate some of my skills. Note I am not a UI/IX designer (skill not unlocked yet).</p>
-          <p></p>
+          <button type="button" class="btn btn-danger mb-4 ms-4"><a id="btn-cv" href="https://drive.google.com/file/d/1ywUhRix-qmVpWmdTVydqaNO7yEK85L7_/view?usp=sharing" target="_blank" rel="noopener noreferrer">CV en PDF</a></button>
           <h3>Tecnologias:</h3>
           <div class="iconos">
             <i class="fab fa-html5"></i>
@@ -88,17 +88,56 @@
     </article>
     
     <!-- proyects -->
-    <section>
+    <section id="project">
+      <h3 class="text-center h2">Projects from FreeCodeCamp</h3>
+      <!-- Add Carrousel -->
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://imagizer.imageshack.com/v2/800x600q90/924/ZcVsfi.png" class="d-block w-100" alt="Build a tribute page">
+          </div>
+          <div class="carousel-item">
+            <img src="https://imagizer.imageshack.com/v2/800x600q90/924/YTedUS.png" class="d-block w-100" alt="Build a Product Landing Page">
+          </div>
+          <div class="carousel-item">
+            <img src=https://imagizer.imageshack.com/v2/800x600q90/923/NASypQ.png
+            " class="d-block w-100" alt="Build a Survey Form">
+          </div>
+          <div class="carousel-item">
+            <img src="https://imagizer.imageshack.com/v2/800x600q90/922/ydxxDZ.png" class="d-block w-100" alt="Build a Technical Documentation Page">
+          </div>
+          <div class="carousel-item">
+            <img src="https://imagizer.imageshack.com/v2/800x600q90/924/ccyqMS.png" class="d-block w-100" alt="Build a Personal Portfolio Webpage">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="container-fluid px-5" >
+        <p>To see the code of each page, enter the solutions of: <a id="link-color" href="https://www.freecodecamp.org/certification/juanpedro-developer/responsive-web-design" target="_blank" rel="noopener noreferrer">FreeCodeCamp - Juan Pedro</a></p>
+        <p>My practice outside of FreeCodeCamp has been creating pages like these to gain experience in technologies like SASS, Bootstrap and Git.</p>
+        <p>Soon I will upload projects showing the js development</p>
+      </div>
     </section>
 
     <!-- contact -->
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sed enim possimus, rem, cum praesentium repellat et id impedit sunt exercitationem eum voluptatibus. Aspernatur ducimus odio voluptate aliquam mollitia sed!</p>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <section id="contact" class="box">
+      <p class="text-center h2">Contact me: </p>
+      <p class="mb-0">If you got here, I hope it's because you liked me.</p>
+      <p class="">Here are some ways to contact me, I hope we can work together.</p>
+      <p><i class="fab fa-google-plus-square"></i> <span class="fw-bold">Email: </span><span class="link-contact">juanpedro.developer@gmail.com</span></p>
+      <p><i class="fab fa-linkedin"></i> <span class="fw-bold">LinkedIn: </span><a class="link-contact" href="https://www.linkedin.com/in/juan-pedro-trionfini-front-end/">https://www.linkedin.com/in/juan-pedro-trionfini-front-end/</a></p>
+    
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>  
     <script src="/app/app.js"></script>
-
-   
 </body>
 </html>
