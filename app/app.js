@@ -1,5 +1,4 @@
-// window.alert("hello word"); 
-
+// efect text type
 const objeto = {
     stringsElement: '#typed-strings', // ID del elemento que contiene cadenas de texto a mostrar.
     typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
@@ -15,3 +14,11 @@ const objeto = {
     contentType: 'html', // 'html' o 'null' para texto sin formato
 }
 const typed = new Typed('.typed', objeto);
+
+// efect shrink navbar with scroll - agrego una clase al hacer scroll
+
+window.addEventListener("scroll", function(){
+    let nav = document.querySelector("nav");
+    nav.classList.toggle("nav--scroll",window.scrollY>0);
+})
+                
