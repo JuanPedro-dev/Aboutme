@@ -28,13 +28,20 @@ a, a:visited, a:link, a:hover, a:active {
 }
 
 .text-color {
-  color: rgba(243, 26, 26, 0.877);
+  color: #f31a1a;
 }
 
 .nav-link:hover {
   border-bottom: 2px solid red;
   -webkit-transition: none;
   transition: none;
+}
+
+.nav--scroll {
+  background-color: #f31a1a;
+  padding: 0 !important;
+  -webkit-transition: .5s all ease-in-out;
+  transition: .5s all ease-in-out;
 }
 
 .text-logo {
@@ -142,7 +149,7 @@ a, a:visited, a:link, a:hover, a:active {
 
 #link-color {
   text-decoration: none;
-  color: rgba(243, 26, 26, 0.877);
+  color: #f31a1a;
 }
 
 #btn-cv {
