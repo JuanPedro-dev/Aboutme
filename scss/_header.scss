@@ -3,3 +3,8 @@
     transition: none;    
 }
 
+.nav--scroll{
+    background-color: $color-secundary;
+    padding: 0 !important; // bootstrap 5 block style 
+    transition: .5s all ease-in-out;
+}
