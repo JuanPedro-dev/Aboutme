@@ -19,6 +19,8 @@ const typed = new Typed('.typed', objeto);
 
 window.addEventListener("scroll", function(){
     let nav = document.querySelector("nav");
+    let navSm = document.querySelector("navbar-nav");
     nav.classList.toggle("nav--scroll",window.scrollY>0);
+    navSm.classList.toggle("nav--scroll",window.scrollY>=0);
 })
                 

@@ -8,3 +8,10 @@
     padding: 0 !important; // bootstrap 5 block style 
     transition: .5s all ease-in-out;
 }
+
+@media (max-width: 768px) {
+    .navbar-nav {
+      background-color: $color-secundary;
+    }
+    
+  }
