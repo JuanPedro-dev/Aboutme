@@ -28,7 +28,7 @@ a, a:visited, a:link, a:hover, a:active {
 }
 
 .text-color {
-  color: #f31a1a;
+  color: crimson;
 }
 
 .nav-link:hover {
@@ -38,7 +38,7 @@ a, a:visited, a:link, a:hover, a:active {
 }
 
 .nav--scroll {
-  background-color: #f31a1a;
+  background-color: crimson;
   padding: 0 !important;
   -webkit-transition: .5s all ease-in-out;
   transition: .5s all ease-in-out;
@@ -46,7 +46,7 @@ a, a:visited, a:link, a:hover, a:active {
 
 @media (max-width: 768px) {
   .navbar-nav {
-    background-color: #f31a1a;
+    background-color: crimson;
   }
 }
 
@@ -155,7 +155,7 @@ a, a:visited, a:link, a:hover, a:active {
 
 #link-color {
   text-decoration: none;
-  color: #f31a1a;
+  color: crimson;
 }
 
 #btn-cv {
